@@ -70,8 +70,7 @@ class GDRegressor():
         
         X_new_b = np.c_[np.ones(X.shape), X]
         return X_new_b.dot(self._theta)
-    
-    
+      
 class SGDRegressor():
     
     def __init__(self, max_iter=1_000, tol=0.001, eta0=0.01, power_t=0.25, shuffle=True):
